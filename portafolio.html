@@ -1,0 +1,153 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Periodista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body class="dark-mode transition-colors duration-300 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 dark-header-footer shadow-lg">
+        <div class="w-24 h-12 bg-red-500 flex items-center justify-center rounded-full">
+            <span>LOGO</span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="index.html" class="header-link text-white hover:text-yellow-500 transition-colors duration-300">Inicio</a>
+            <a href="portafolio.html" class="header-link text-white hover:text-yellow-500 transition-colors duration-300">Portafolio</a>
+        </div>
+        <button id="theme-toggle" class="bg-gray-700 text-white py-1 px-2 rounded-full hover:bg-gray-600 transition-colors duration-300">
+            <img src="static/img/tema.svg" alt="Imagen del tema" class="h-7 w-12">
+        </button>        
+    </header>
+
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center justify-center p-4 dark-mode">
+    <!-- Reportajes -->
+    <div class="w-full max-w-6xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8">
+            <!-- Primer reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-1')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 1" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Redacto reportajes sobre [temas] con un enfoque crítico y objetivo."</p>
+            </div>
+
+            <!-- Segundo reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-2')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 2" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Mi experiencia incluye reportajes en profundidad sobre [temas o eventos]".</p>
+            </div>
+
+            <!-- Tercer reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-3')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 3" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Trabajo en medios digitales, prensa escrita, y más."</p>
+            </div>
+
+            <!-- Cuarto reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-4')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 4" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Reportaje sobre [tema] con un enfoque innovador."</p>
+            </div>
+
+            <!-- Quinto reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-5')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 5" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Investigación y análisis profundo sobre eventos clave."</p>
+            </div>
+
+            <!-- Sexto reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-6')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 6" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Enfoque en el análisis de [tema]."</p>
+            </div>
+
+            <!-- Séptimo reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-7')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 7" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Investigación sobre [tema] con datos concretos."</p>
+            </div>
+
+            <!-- Séptimo reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-7')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 7" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Investigación sobre [tema] con datos concretos."</p>
+            </div>
+
+            <!-- Séptimo reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-7')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 7" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Investigación sobre [tema] con datos concretos."</p>
+            </div>
+        </div>
+
+        <!-- Segunda fila de reportajes -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 mt-8">
+            <!-- Octavo reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-8')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 8" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Informe sobre [tema] con fuentes verificadas."</p>
+            </div>
+
+            <!-- Noveno reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-9')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 9" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Análisis de [evento] y sus repercusiones."</p>
+            </div>
+
+            <!-- Décimo reportaje -->
+            <div class="col-span-1 md:col-span-2 p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg cursor-pointer" onclick="openModal('reportaje-10')">
+                <div class="w-32 h-32 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/96x96" alt="Imagen de reportaje 10" class="w-full h-full object-cover">
+                </div>
+                <p class="text-lg">"Reportaje a fondo sobre [tema]."</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Modal (ventana emergente) -->
+<div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+        <h3 id="modal-title" class="text-xl mb-4">Título del Reportaje</h3>
+        <p id="modal-description">Contenido del reportaje.</p>
+        <button onclick="closeModal()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">Cerrar</button>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 dark-header-footer shadow-lg">
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-blue-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-600 transition-colors duration-300"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" class="text-pink-500 hover:text-pink-600 transition-colors duration-300"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="text-blue-500 hover:text-blue-600 transition-colors duration-300"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+    </footer>
+<script src="static/js/index.js"></script>
+<script src="static/js/portafolio.js"></script>
+</body>
+</html>

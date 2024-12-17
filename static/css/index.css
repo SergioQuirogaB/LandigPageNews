@@ -1,0 +1,41 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+.dark-mode {
+    background-color: #1a202c;
+    color: white;
+}
+.light-mode {
+    color: black;
+}
+.dark-header-footer {
+    background-color: #2d3748;
+}
+.light-header-footer {
+    background-color: #e2e8f0; /* Gris 300 */
+    color: black;
+}
+/* Modo oscuro - tarjetas grises */
+.dark-card {
+    background-color: #4a5568; /* Gris oscuro */
+}
+/* Modo claro - tarjetas blancas con borde negro */
+.light-card {
+    background-color: white;
+    color: black;
+    border: 1px solid black; /* Borde negro delgado en modo claro */
+}
+/* Hover de las tarjetas en modo claro */
+.light-mode .light-card:hover {
+    background-color: #e2e8f0; /* Gris claro */
+    color: black; /* Texto blanco para contraste */
+}
+
+/* Cambio de fondo de la foto según el modo */
+.dark-mode .photo-bg {
+    background-color: black;
+}
+
+.light-mode .photo-bg {
+    background-color: white;
+}

@@ -1,0 +1,93 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Periodista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body class="dark-mode transition-colors duration-300 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 dark-header-footer shadow-lg">
+        <div class="w-24 h-12 bg-red-500 flex items-center justify-center rounded-full">
+            <span>LOGO</span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="index.html" class="header-link text-white hover:text-yellow-500 transition-colors duration-300">Inicio</a>
+            <a href="portafolio.html" class="header-link text-white hover:text-yellow-500 transition-colors duration-300">Portafolio</a>
+        </div>
+        <button id="theme-toggle" class="bg-gray-700 text-white py-1 px-2 rounded-full hover:bg-gray-600 transition-colors duration-300">
+            <img src="static/img/tema.svg" alt="Imagen del tema" class="h-7 w-12">
+        </button>        
+    </header>
+
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center justify-center p-4 dark-mode">
+    <div class="w-48 h-48 flex items-center justify-center mb-4 rounded-full overflow-hidden shadow-lg photo-bg">
+        <img src="https://placehold.co/192x192" alt="Foto del periodista" class="w-full h-full object-cover">
+    </div>
+    <div class="text-center mb-4">
+        <h1 class="text-3xl font-bold mb-2">Soy [tu nombre], periodista especializado en [tema o enfoque]</h1>
+        <p class="mb-2 text-lg">Con experiencia en [especialización], he trabajado en medios como [nombres de medios de comunicación].</p>
+        <h2 class="text-xl font-semibold mb-2">Mi trabajo ha sido publicado en:</h2>
+        <p class="text-lg">[Nombres de medios de comunicación]</p>
+        <p class="text-lg mt-4">Soy un apasionado del periodismo independiente y mi objetivo es contar historias que importan, con un enfoque crítico y sin prejuicios.</p>
+    </div>
+    <button class="bg-yellow-500 text-black py-2 px-4 rounded-full mb-4 hover:bg-yellow-600 transition-colors duration-300 shadow-lg">
+        Ver mis reportajes
+    </button>
+
+    <!-- Reportajes -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+        <div class="p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg">
+            <div class="w-24 h-24 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                <img src="https://placehold.co/96x96" alt="Imagen de reportaje 1" class="w-full h-full object-cover">
+            </div>
+            <p class="text-lg">"Redacto reportajes sobre [temas] con un enfoque crítico y objetivo."</p>
+        </div>
+        <div class="p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg">
+            <div class="w-24 h-24 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                <img src="https://placehold.co/96x96" alt="Imagen de reportaje 2" class="w-full h-full object-cover">
+            </div>
+            <p class="text-lg">"Mi experiencia incluye reportajes en profundidad sobre [temas o eventos]".</p>
+        </div>
+        <div class="p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg">
+            <div class="w-24 h-24 bg-blue-500 mx-auto mb-4 flex items-center justify-center rounded-full overflow-hidden shadow-lg">
+                <img src="https://placehold.co/96x96" alt="Imagen de reportaje 3" class="w-full h-full object-cover">
+            </div>
+            <p class="text-lg">"Trabajo en medios digitales, prensa escrita, y más."</p>
+        </div>
+    </div>
+
+    <!-- Testimonios -->
+    <div class="w-full max-w-6xl mt-8">
+        <h2 class="text-2xl font-semibold text-center mb-4">Testimonios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg">
+                <p class="text-lg">"Trabajar con [tu nombre] fue una experiencia enriquecedora. Su enfoque ético y profesionalismo marcan la diferencia." - [Nombre de persona, cargo]</p>
+            </div>
+            <div class="p-6 text-center dark-card hover:bg-gray-700 transition-colors duration-300 rounded-lg shadow-lg">
+                <p class="text-lg">"Un periodista comprometido con la verdad y con una gran capacidad para profundizar en los temas. Totalmente recomendable." - [Nombre de persona, cargo]</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de contacto -->
+    <button class="bg-green-500 text-white py-2 px-4 rounded-full mb-4 hover:bg-green-600 transition-colors duration-300 shadow-lg mt-6">
+        Contactar conmigo
+    </button>
+</main>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 dark-header-footer shadow-lg">
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-blue-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-red-500 hover:text-red-600 transition-colors duration-300"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" class="text-pink-500 hover:text-pink-600 transition-colors duration-300"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="text-blue-500 hover:text-blue-600 transition-colors duration-300"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+    </footer>
+<script src="static/js/index.js"></script>
+</body>
+</html>
