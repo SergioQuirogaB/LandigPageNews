@@ -4,8 +4,8 @@ Este proyecto es un portafolio digital diseñado para un periodista, que busca d
 
 ## Captura de Pantalla
 ![alt text](evidencias/image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](evidencias/image-1.png)
+![alt text](evidencias/image-2.png)
 
 ## Características
 - **Información Personalizada:** Permite destacar el nombre, especialización y experiencia del periodista.
