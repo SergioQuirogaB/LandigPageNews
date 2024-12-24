@@ -3,7 +3,7 @@
 Este proyecto es un portafolio digital diseñado para un periodista, que busca destacar su experiencia profesional, trabajos publicados y testimonios relevantes. Fue construido con un diseño moderno y responsivo para ofrecer una navegación intuitiva y atractiva.
 
 ## Captura de Pantalla
-![alt text](image.png)
+![alt text](evidencias/image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
