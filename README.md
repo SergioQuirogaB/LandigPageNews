@@ -27,4 +27,4 @@ Este proyecto es un portafolio digital diseñado para un periodista, que busca d
 ## Cómo Usar Este Proyecto
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/sergioquirogab/landingPage.git
+   git clone https://github.com/sergioquirogab/landingPageNews.git
